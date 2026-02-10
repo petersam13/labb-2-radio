@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Laboration 2 – Sveriges Radio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-do lista</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="box">
+    <h1>To-do lista</h1>
 
-    <header>
-        <h1>Sveriges Radio – Öppet API</h1>
-        <p>Välj en kanal för att se program</p>
-    </header>
+    <input id="todoInput" type="text" placeholder="Skriv en händelse..." />
+    <button id="addBtn" type="button">Lägg till</button>
 
-    <main>
-        <section>
-            <h2>Radiokanaler</h2>
-            <div id="channels"></div>
-        </section>
+    
+    <ul id="todoList"></ul>
+  </div>
 
-        <section>
-            <h2>Program</h2>
-            <div id="programs"></div>
-        </section>
-    </main>
-
-    <script src="js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
